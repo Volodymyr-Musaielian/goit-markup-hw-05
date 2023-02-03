@@ -432,6 +432,34 @@ header .link {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+  text-align: justify;
+  left: 0;
+  top: 0;
+
+  color: var(--secondary-bg-color);
+  background-color: var(--accent-color);
+  overflow: auto;
+
+  transform: translateY(100%);
+}
+
+.work-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.work-item .link:hover .overlay
+/* .work-item .link:focus */ {
+  transform: translateY(0);
+}
+
 /* Footer */
 
 footer {
